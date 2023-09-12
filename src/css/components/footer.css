@@ -2,6 +2,7 @@
     background: rgb(224, 229, 235);
     padding-top: 130px;
     padding-bottom: 0;
+    overflow: hidden;
 }
 
 footer {
