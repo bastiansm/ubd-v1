@@ -59,7 +59,6 @@ body::-webkit-scrollbar-thumb {
 section {
     padding: 50px 5%;
     width: 100%;
-    overflow: hidden;
 }
 
 a {
