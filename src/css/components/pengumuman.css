@@ -6,6 +6,7 @@
     background-attachment: fixed;
     padding: 0;
     margin-top: 20px;
+    overflow: hidden;
 }
 
 /* .pengumuman::after {
