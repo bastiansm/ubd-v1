@@ -1,0 +1,7 @@
+.hero .shapes {
+    height: 150px;
+    width: 300px;
+    background: var(--shapes);
+    filter: blur(100px);
+    position: absolute;
+}

@@ -1,0 +1,156 @@
+.footer {
+    background: rgb(224, 229, 235);
+    padding-top: 130px;
+    padding-bottom: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #bcb8b86f;
+    padding-bottom: 70px;
+}
+
+.footer-info {
+    display: flex;
+    /* margin-left: 20px; */
+    gap: 20px;
+}
+
+.footer-info .info-logo img {
+    height: 150px;
+}
+
+.info-details {
+    /* margin-top: 10px; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info-details span {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.info-details span svg {
+    height: 1.2rem;
+    color: var(--green);
+}
+
+.footer-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-menus {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-menu-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-menu-item a {
+    width: fit-content;
+}
+
+.footer-menu-item a:hover {
+    color: var(--green);
+}
+
+.footers {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--next-dark);
+    overflow: hidden;
+    position: relative;
+}
+
+.footers span a {
+    color: var(--green);
+}
+
+.footers span a:hover {
+    color: var(--sec-green);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.social a {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background: var(--green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.social a:hover {
+    transform: scale(1.1);
+}
+
+.social a svg {
+    height: 20px;
+    width: 20px;
+    fill: var(--white);
+}
+
+@media (max-width:1062px) {
+    footer {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-info {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .footer-menu {
+        justify-content: space-between;
+    }
+    
+    .footer-info, .footer-menu {
+        width: 100%;
+    }
+}
+
+@media (max-width:507px) {
+    .footer-info {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+@media (max-width:450px) {
+    footer {
+        gap: 30px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media (max-width:402px) {
+    .footers {
+        font-size: .9rem;
+    }
+} 

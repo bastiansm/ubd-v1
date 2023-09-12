@@ -1,0 +1,95 @@
+.mitra {
+    /* background: #000; */
+    padding: 0 5%;
+}
+
+.mitra-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--green);
+    padding: 20px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.132);
+    border-radius: 10px;
+    transform: translateY(75px);
+}
+
+.mitra-details {
+    width: 40%;
+    /* background: blue; */
+}
+
+.mitra-details h1 {
+    color: var(--white);
+}
+
+.mitra-details p {
+    color: var(--sec-white);
+    margin-top: 10px;
+    line-height: 1.2rem;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.mitra-logo {
+    width: 60%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+.mitra-logo::before {
+    content: '';
+    height: 100%;
+    width: 100px;
+    background: linear-gradient(to left, rgba(225, 225, 225, 0), var(--green));
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: -5px;
+}
+
+.mitra-logo::after {
+    content: '';
+    height: 100%;
+    width: 100px;
+    background: linear-gradient(to right, rgba(225, 225, 225, 0), var(--green));
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: -5px;
+}
+
+.mitra-logo .logo {
+    animation: scroll 30s linear infinite;
+    display: flex;
+    align-items: center;
+    width: calc(100% * 500px);
+    gap: 50px;
+    padding-left: 50px;
+}
+
+.mitra-logo:hover .logo {
+    animation-play-state: paused;
+}
+
+@media (max-width:850px) {
+    .mitra-wrapper {
+        flex-direction: column;
+    }
+
+    .mitra-details, .mitra-logo {
+        width: 100%;
+    }
+
+    .mitra-details {
+        text-align: center;
+    }
+}
